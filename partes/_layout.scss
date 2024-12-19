@@ -1,0 +1,101 @@
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.bg-home {
+    position: relative;
+}
+
+.bg-home:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-image: linear-gradient(to bottom, rgba(6,18,30,0.1), #06121e), url("../imgs/bannerGenerico.jpeg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; //camada abaixo da imagem, ou seja, atras dos elementos
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+}
+
+.hero {
+    color: $white-normal;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; //vertical
+    justify-content: center; //horizontal
+    padding: 14px;
+
+    h1 {
+        text-align: center;
+        line-height: 150%;
+        max-width: 940px;
+        font-size: 46px;
+    }
+
+    p {
+        text-align: center;
+        margin: 14px 0; // cima-baixo(14px) esq-direita (0)
+    }
+}
+
+//botao agendar horario
+.button-contact {
+    padding: 14px 28px; //cima-baixo(14px) esq-direita(28px)
+    color:$white-normal;
+    background-color: $red-normal;
+    border: 0;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 14px 0;
+}
+
+.button-contact:hover {
+    animation: scaleButton 0.8s alternate infinite;
+}
+
+//criamos uma animação, assim como no header. Mas aqui, ele apenas aumenta de tamanho.
+@keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.07);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        min-height: 60vh; //tenha sempre uma presença mínima garantida na tela, mas que esteja livre para expandir se o conteúdo exigir
+
+        h1 {
+            font-size: 34px;
+            padding: 0 14px;
+            width: 100%;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+}
