@@ -1,5 +1,3 @@
-
-
 .container {
     max-width: 1440px;
     margin: 0 auto;
@@ -14,7 +12,7 @@
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(6,18,30,0.1), #06121e), url("../imgs/bannerGenerico.jpeg");
+    background-image: linear-gradient(to bottom, rgba(0, 3, 5, 0.6), #06121e), url("../imgs/bannerGenerico.jpeg");
     left: 0;
     top: 0;
     width: 100%;
@@ -32,7 +30,7 @@
     display: flex;
     flex-direction: column;
     align-items: center; //vertical
-    justify-content: center; //horizontal
+    justify-content: center; //horizontalP
     padding: 14px;
 
     h1 {
@@ -99,3 +97,121 @@
         font-size: 13px;
     }
 }
+
+.about {
+    background-color: $primary-normal;
+    overflow: hidden;
+    color: $white-normal;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px; //gap entre o texto sobre e as imgs
+    padding: 34px 14px 64px 14px;
+
+    img {
+        width: 500px;
+    }
+}
+
+.about-container div {
+    flex:1;
+}
+
+.about-description {
+    h2 {
+        font-size: 38px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        margin-bottom: 14px;
+        line-height: 150%; //define o espaço total disponível para cada linha de texto
+    }
+}    
+
+@media screen and (max-width: 760px) {
+    .about-container {
+        flex-direction: column; //ficar em coluna em telas menores
+    }
+
+    .about-container {
+        img {
+            padding: 0 15px;
+        }
+    }
+}
+
+.services {
+    background-color: $white-normal;
+    color: $black-normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding: 54px 14px;
+}
+
+.services-content h2 {
+    text-transform: uppercase; //letra maiúscula
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+.services-content p {
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 14px;
+    max-width: 780px; //pra nao ficar linhas muito grandes. Vai se adaptando
+}
+
+.haircuts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+}
+
+.haircut {
+    flex: 1; //cada div, tentar ocupar o mesmo espaço na tela
+    display: flex;
+    flex-direction: column; //faz com que a div haircut-info fique a baixo da img, uma vez que pertencem a mesma div
+    background-color: $white-normal;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0,0,0, 0.45);
+    
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        max-width: 354px; //para que a seção nao passe de 354px, independente do tamanho
+        transition: transform 0.25s;
+    }
+}
+
+.haircut img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.haircut-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: $white-normal;    
+    z-index: 99;
+}
+
+.haircut-info button {
+    color: $white-normal;
+    background-color: $red-normal;
+    border: 0;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: default; //para não demonstrar ação ao passar o cursor por cima do botao
+}
+
