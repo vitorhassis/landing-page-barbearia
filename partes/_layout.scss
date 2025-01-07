@@ -1,5 +1,5 @@
 .container {
-    max-width: 1440px;
+    max-width: 1840px;
     margin: 0 auto;
     padding: 0 10px;
 }
@@ -12,7 +12,7 @@
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, #06121eb0, #06121e), url("../imgs/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.jpg");
+    background-image: linear-gradient(to bottom, #06121eb0, #06121e), url("../imgs/banner.jpg");
     left: 0;
     top: 0;
     width: 100%;
@@ -166,7 +166,7 @@
 .services-content p {
     line-height: 150%;
     text-align: center;
-    margin-bottom: 14px;
+    margin-bottom: 3em;
     max-width: 780px; //pra nao ficar linhas muito grandes. Vai se adaptando
 }
 
@@ -248,6 +248,7 @@
 }
 
 .footer-text {
+    font-size: 13px;
     color: $gray;
     text-align: center;
     justify-content: center;
@@ -262,6 +263,14 @@ a.autor-link {
         cursor: pointer;
         color: $white-dark;
     }
+}
+
+.loc_h2 {
+    margin-top: -2em;
+}
+
+.reviews {
+   margin-top: -0.3em;
 }
 
 .btn-whatsapp {
