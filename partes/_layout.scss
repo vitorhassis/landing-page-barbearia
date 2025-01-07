@@ -12,7 +12,7 @@
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(0, 3, 5, 0.6), #06121e), url("../imgs/bannerGenerico.jpeg");
+    background-image: linear-gradient(to bottom, #06121eb0, #06121e), url("../imgs/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.jpg");
     left: 0;
     top: 0;
     width: 100%;
@@ -45,6 +45,8 @@
         margin: 14px 0; // cima-baixo(14px) esq-direita (0)
     }
 }
+
+
 
 //botao agendar horario
 .button-contact {
@@ -112,7 +114,7 @@
     padding: 34px 14px 64px 14px;
 
     img {
-        width: 500px;
+        width: 650px;
     }
 }
 
@@ -145,6 +147,7 @@
 }
 
 .services {
+    margin-top: -7e,;
     background-color: $white-normal;
     color: $black-normal;
     display: flex;
@@ -213,5 +216,96 @@
     padding: 4px 8px;
     border-radius: 4px;
     cursor: default; //para não demonstrar ação ao passar o cursor por cima do botao
+}
+
+@media screen and (max-width: 768px) {
+    .haircuts {
+        flex-direction: column;
+    }
+
+    .haircut img {
+        max-width: 740px;
+    }
+}
+
+
+//---footer
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: $white-normal;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+    color: $white-normal;
+}
+
+.footer-text {
+    color: $gray;
+    text-align: center;
+    justify-content: center;
+}
+
+a.autor-link {
+    color: $gray;
+    text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+        color: $white-dark;
+    }
+}
+
+.btn-whatsapp {
+    position: fixed; //deixar o botao fixo na tela, na direita 
+    bottom: 14px;
+    right: 24px;
+    z-index: 99;
+
+    img {
+        max-width: 74px;
+        transition: transform 0.4s;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
+.btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+    top: 8px;
+    left: -144px;
+    background-color: $black-normal;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+//tooltip começa escondido, depois de passar o cursor no botao whatsapp ele aparece
+.btn-whatsapp:hover .tooltip-text{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .btn-whatsapp {
+        img {
+            max-width: 60px;
+        }
+    }   
 }
 
