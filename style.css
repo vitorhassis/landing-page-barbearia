@@ -77,9 +77,9 @@ i {
   }
 }
 .container {
-  max-width: 1840px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 8px;
 }
 
 .bg-home {
@@ -102,6 +102,19 @@ i {
   opacity: 0.9;
 }
 
+@media screen and (max-width: 768px) {
+  .header-content.container {
+    padding-top: 2em;
+  }
+  #header-img {
+    margin-right: 10em;
+    margin-top: 2em;
+  }
+  #hero-container-h1 {
+    font-size: 35px;
+    padding: 2em;
+  }
+}
 .hero {
   color: #FFF;
   min-height: 80vh;
@@ -144,6 +157,14 @@ i {
     transform: scale(1.07);
   }
 }
+@media screen and (max-width: 992px) {
+  .hero h1 {
+    padding: 1em;
+  }
+  #container-img {
+    width: 450px;
+  }
+}
 @media screen and (max-width: 768px) {
   .hero {
     min-height: 60vh;
@@ -161,9 +182,6 @@ i {
   .hero h1 {
     font-size: 24px;
   }
-  .hero p {
-    font-size: 13px;
-  }
 }
 .about {
   background-color: #06121e;
@@ -179,7 +197,7 @@ i {
   padding: 34px 14px 64px 14px;
 }
 .about-container img {
-  width: 650px;
+  width: 600px;
 }
 
 .about-container div {
@@ -195,16 +213,60 @@ i {
   line-height: 150%;
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1200px) {
+  #container-img {
+    width: 470px;
+  }
+  .about-container p {
+    padding-right: 3em;
+  }
+  .about-container h2 {
+    padding-right: 1em;
+  }
+}
+@media screen and (max-width: 992px) {
+  #container-img {
+    width: 400px;
+  }
+  .about-container h2 {
+    font-size: 36px;
+  }
+  .about-container p {
+    font-size: 15px;
+    margin-right: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
   .about-container {
     flex-direction: column;
   }
-  .about-container img {
-    padding: 0 15px;
+  #container-img {
+    width: 500px;
+  }
+  .about-container h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .about-description p {
+    font-size: 16px;
+    padding: 0;
+    margin-left: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .about-description p {
+    padding: 0;
+    margin-left: 2em;
+  }
+  .about-description h2 {
+    padding: 0;
+    margin-left: 0.5em;
   }
 }
 .services {
-  margin-top: -7e;
   background-color: #FFF;
   color: #232224;
   display: flex;
@@ -276,6 +338,7 @@ i {
 @media screen and (max-width: 768px) {
   .haircuts {
     flex-direction: column;
+    margin-bottom: -1em;
   }
   .haircut img {
     max-width: 740px;
@@ -358,7 +421,7 @@ a.autor-link:hover {
 
 @media screen and (max-width: 768px) {
   .btn-whatsapp img {
-    max-width: 60px;
+    max-width: 64px;
   }
 }
 body {

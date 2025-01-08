@@ -1,7 +1,7 @@
 .container {
-    max-width: 1840px;
+    max-width: 1440px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 8px;
 }
 
 .bg-home {
@@ -23,6 +23,25 @@
     background-position: 50% 0;
     opacity: 0.9;
 }
+
+@media screen and (max-width:768px) {
+
+    .header-content.container {
+        padding-top: 2em;
+    }
+
+    #header-img {
+        margin-right: 10em;
+        margin-top: 2em;
+    }
+
+    #hero-container-h1 {
+        font-size: 35px;
+        padding: 2em;
+    }
+}
+
+//---hero---
 
 .hero {
     color: $white-normal;
@@ -74,6 +93,16 @@
     }
 }
 
+@media screen and (max-width: 992px) {
+    .hero h1 {
+        padding: 1em;
+    }
+
+    #container-img {
+        width: 450px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .hero {
         min-height: 60vh; //tenha sempre uma presença mínima garantida na tela, mas que esteja livre para expandir se o conteúdo exigir
@@ -94,11 +123,11 @@
     .hero h1 {
         font-size: 24px;
     }
-
-    .hero p {
-        font-size: 13px;
-    }
 }
+
+//---
+
+//---about---
 
 .about {
     background-color: $primary-normal;
@@ -114,7 +143,7 @@
     padding: 34px 14px 64px 14px;
 
     img {
-        width: 650px;
+        width: 600px;
     }
 }
 
@@ -132,22 +161,81 @@
         margin-bottom: 14px;
         line-height: 150%; //define o espaço total disponível para cada linha de texto
     }
-}    
+}  
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 1200px) {
+    #container-img {
+        width: 470px;
+    }
+
+    .about-container p{
+        padding-right: 3em;
+    }
+
+    .about-container h2 {
+        padding-right: 1em;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    #container-img {
+        width: 400px;
+    }
+
+    .about-container h2 {
+        font-size: 36px;
+    }
+
+    .about-container p {
+        font-size: 15px;
+        margin-right: 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
     .about-container {
         flex-direction: column; //ficar em coluna em telas menores
     }
 
-    .about-container {
-        img {
-            padding: 0 15px;
-        }
+    #container-img {
+        width: 500px;
     }
+
+    .about-container h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+   .about-description p {
+    font-size: 16px;
+    padding: 0;
+    margin-left: 15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   }
+
 }
 
+@media screen and (max-width: 600px) {
+    .about-description p {
+        padding: 0;
+        margin-left: 2em;
+    }
+
+    .about-description h2 {
+        padding: 0;
+        margin-left: 0.5em;
+    }
+
+}
+
+//---
+
+//---services---
+
 .services {
-    margin-top: -7e,;
     background-color: $white-normal;
     color: $black-normal;
     display: flex;
@@ -221,6 +309,7 @@
 @media screen and (max-width: 768px) {
     .haircuts {
         flex-direction: column;
+        margin-bottom: -1em;
     }
 
     .haircut img {
@@ -228,8 +317,9 @@
     }
 }
 
+//---
 
-//---footer
+//---footer---
 
 .footer {
     display: flex;
@@ -273,6 +363,8 @@ a.autor-link {
    margin-top: -0.3em;
 }
 
+//---botao whatsapp---
+
 .btn-whatsapp {
     position: fixed; //deixar o botao fixo na tela, na direita 
     bottom: 14px;
@@ -313,8 +405,9 @@ a.autor-link {
 @media screen and (max-width: 768px) {
     .btn-whatsapp {
         img {
-            max-width: 60px;
+            max-width: 64px;
         }
     }   
 }
+
 
