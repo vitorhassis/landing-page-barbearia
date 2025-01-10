@@ -112,7 +112,6 @@
   #hero-container-h1 {
     font-size: 23px;
   }
-
 }
 
 //---------------------ABOUT---------------------//
@@ -143,6 +142,7 @@
   h2 {
     font-size: 38px;
     margin-bottom: 24px;
+    text-align: center;
   }
 
   p {
@@ -150,6 +150,7 @@
     line-height: 150%; //define o espaço total disponível para cada linha de texto
   }
 }
+
 
 @media screen and (max-width: 1200px) {
   #container-img {
@@ -162,6 +163,7 @@
 
   .about-container h2 {
     padding-right: 1em;
+    margin-bottom: 20px;
   }
 }
 
@@ -202,6 +204,12 @@
     justify-content: center;
     align-items: center;
   }
+
+  .about-description h2 {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -214,9 +222,13 @@
     padding: 0;
     margin-left: 0.5em;
   }
+
+  #container-img {
+    width: 380px;
+  }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
   #container-img {
     width: 350px;
   }
@@ -244,6 +256,11 @@
   padding: 54px 14px;
 }
 
+p {
+  text-align: center;
+  justify-content: center;
+}
+
 .services-content h2 {
   text-transform: uppercase; //letra maiúscula
   text-align: center;
@@ -252,7 +269,6 @@
 
 .services-content p {
   line-height: 150%;
-  text-align: center;
   margin-bottom: 3em;
   max-width: 780px; //pra nao ficar linhas muito grandes. Vai se adaptando
 }
