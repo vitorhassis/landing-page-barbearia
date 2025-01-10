@@ -1,200 +1,272 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prieto Barber Shop</title>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora&display=swap" rel="stylesheet"> <!---link fontes-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> <!---link icons-->
-    <link rel="stylesheet" href="style.css">  
+    <!---------------------link "aos". Efeitos/transições--------------------->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora&display=swap"
+      rel="stylesheet"
+    />
+    <!---------------------link fontes--------------------->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!---------------------link icons--------------------->
+
+    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="bg-home">
+      <!---------------------HEADER (icone instagram, logo, botao)--------------------->
 
-        <header> <!---icones, logo e botao-->
+      <header>
+        <nav class="header-content container">
+          <div class="header-icons" data-aos="fade-down" data-aos-delay="300">
+            <a
+              href="https://www.instagram.com/prietobarbearia/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+          </div>
 
-            <nav class="header-content container">
-                <div class="header-icons" data-aos="fade-down" data-aos-delay="300">
-                    <a href="https://www.instagram.com/prietobarbearia/" target="_blank">
-                        <i class="fa-brands fa-instagram fa-2x"></i>
-                    </a>
-                </div>
+          <div class="header-logo" data-aos="fade-up">
+            <img
+              id="header-img"
+              data-aos="flip-up"
+              data-aos="400"
+              data-aos-duration="1500"
+              src="imgs/logo.webp"
+              alt="logo da barbearia"
+            />
+          </div>
 
-                <div class="header-logo" data-aos="fade-up">
-                    <img
-                    id="header-img" 
-                    data-aos="flip-up"
-                    data-aos="400"
-                    data-aos-duration="1500"
-                    src="imgs/logo.webp"
-                    alt="logo da barbearia">
-                </div>
+          <div data-aos="fade-down" data-aos-delay="300">
+            <a
+              class="header-button"
+              href="https://booksy.com/pt-br/298082_prieto-barber-shop_barbearias_574926_colorado?do=invite&_branch_match_id=1398047316278035500&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVzw%2FJL%2FULd%2FNM8UqyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAB63vJTwAAAA%3D"
+              class="button-contact"
+              target="blank"
+            >
+              Agendar horário
+            </a>
+          </div>
+        </nav>
 
-                <div data-aos="fade-down" data-aos-delay="300">
-                    <a class="header-button" href="https://booksy.com/pt-br/298082_prieto-barber-shop_barbearias_574926_colorado?do=invite&_branch_match_id=1398047316278035500&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVzw%2FJL%2FULd%2FNM8UqyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAB63vJTwAAAA%3D" class="button-contact" target="blank">
-                        Agendar horário
-                    </a>
-                </div>
-            </nav>
-            
-            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
-                <h1 id="hero-container-h1">“SER BARBEIRO NÃO É UM TRABALHO, É UMA ARTE” - Barbearia Destaque de 2024!</h1>
-                <div class="hero-container-horarios">
-                    <p>Horários</p>
-                    <p>Dias comerciais: 08:00 - 12:00 e 14:00 - 19:00</p>
-                    <p>Sábado: 08:00 - 14:00</p> 
-                </div>
-                          
+        <!---------------------HERO (texto horarios e datas + botao)--------------------->
 
-                <a href="https://booksy.com/pt-br/298082_prieto-barber-shop_barbearias_574926_colorado?do=invite&_branch_match_id=1398047316278035500&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVzw%2FJL%2FULd%2FNM8UqyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAB63vJTwAAAA%3D" class="button-contact" target="blank">
-                    Agendar horário
-                </a>
-            </main>
-            
-        </header>
-    </div>   
-    
-    <!---imagens e sobre-->
+        <main class="hero container" data-aos="fade-up" data-aos-delay="400">
+          <h1 id="hero-container-h1">
+            “SER BARBEIRO NÃO É UM TRABALHO, É UMA ARTE” - Barbearia Destaque de
+            2024!
+          </h1>
+          <div class="hero-container-horarios">
+            <p>Horários</p>
+            <p>Dias comerciais: 08:00 - 12:00 e 14:00 - 19:00</p>
+            <p>Sábado: 08:00 - 14:00</p>
+          </div>
+
+          <a
+            href="https://booksy.com/pt-br/298082_prieto-barber-shop_barbearias_574926_colorado?do=invite&_branch_match_id=1398047316278035500&utm_medium=merchant_customer_invite&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXT07J0UvKz88urtRLzs%2FVzw%2FJL%2FULd%2FNM8UqyrytKTUstKsrMS49PKsovL04tsnXOKMrPTQUAB63vJTwAAAA%3D"
+            class="button-contact"
+            target="blank"
+          >
+            Agendar horário
+          </a>
+        </main>
+      </header>
+    </div>
+
+    <!---------------------ABOUT (imagem cortes + texto boas vindas)--------------------->
+
     <section class="about">
-        <div class="container about-container">
-            <div data-aos="zoom-in" data-aos-delay="100"> 
-                 <img 
-                 id="container-img"
-                 src="imgs/cortes.png" 
-                 alt="imagem cortes">
-            </div>
-
-             <div class="about-description" data-aos="zoom-out-left" data-aos-delay="250">
-                <h2>Bem-vindo à Prieto Barber Shop!</h2>
-                <p>A Prieto Barber Shop foi fundada em 2022 com o objetivo de oferecer cortes e serviços de barba com qualidade excepcional. Aqui, unimos técnicas modernas, produtos de alta performance e um atendimento personalizado para garantir que cada cliente se sinta único e confiante. Mais que um corte de cabelo, uma experiência de estilo e cuidado. Venha conhecer e descubra o padrão de excelência que nos torna referência em Colorado!</p>
-            </div>
+      <div class="container about-container">
+        <div data-aos="zoom-in" data-aos-delay="100">
+          <img id="container-img" src="imgs/cortes.png" alt="imagem cortes" />
         </div>
+
+        <div
+          class="about-description"
+          data-aos="zoom-out-left"
+          data-aos-delay="250"
+        >
+          <h2>Bem-vindo à Prieto Barber Shop!</h2>
+          <p>
+            A Prieto Barber Shop foi fundada em 2022 com o objetivo de oferecer
+            cortes e serviços de barba com qualidade excepcional. Aqui, unimos
+            técnicas modernas, produtos de alta performance e um atendimento
+            personalizado para garantir que cada cliente se sinta único e
+            confiante. Mais que um corte de cabelo, uma experiência de estilo e
+            cuidado. Venha conhecer e descubra o padrão de excelência que nos
+            torna referência em Colorado!
+          </p>
+        </div>
+      </div>
     </section>
+
+    <!---------------------SERVICES (texto + imagens e valores dos serviços + localizacao)--------------------->
 
     <section class="services">
-        <div class="services-content container"> <!---estamos reaproveitando a classe container-->
-            <h2>Serviços</h2>
-            <p>Oferecemos cortes de cabelo, serviços de barba e design de sobrancelhas com qualidade e precisão. Nosso objetivo é proporcionar um atendimento personalizado, garantindo que você saia com o visual perfeito e a confiança renovada. Para melhor atender às suas necessidades, nossos preços podem variar de acordo com os serviços combinados. Confira nossos valores:</p>
+      <div class="services-content container">
+        <!---estamos reaproveitando a classe container-->
+        <h2>Serviços</h2>
+        <p>
+          Oferecemos cortes de cabelo, serviços de barba e design de
+          sobrancelhas com qualidade e precisão. Nosso objetivo é proporcionar
+          um atendimento personalizado, garantindo que você saia com o visual
+          perfeito e a confiança renovada. Para melhor atender às suas
+          necessidades, nossos preços podem variar de acordo com os serviços
+          combinados. Confira nossos valores:
+        </p>
+      </div>
+
+      <section class="haircuts">
+        <div
+          class="haircut"
+          class="haircut-img"
+          data-aos="fade-up"
+          data-aos-delay="150"
+        >
+          <img src="imgs/cortecabelo.jpg" alt="imagem corte cabelo" />
+          <div class="haircut-info">
+            <strong>Corte normal</strong>
+            <button>
+              <p>R$ 40,00</p>
+            </button>
+          </div>
         </div>
 
-        <section class="haircuts">
+        <div class="haircut" data-aos="fade-up" data-aos-delay="250">
+          <img src="imgs/barba.jpg" alt="imagem corte barba" />
+          <div class="haircut-info">
+            <strong>Barba completa</strong>
+            <button>
+              <p>R$ 35,00</p>
+            </button>
+          </div>
+        </div>
 
-            <div class="haircut" data-aos="fade-up" data-aos-delay="150">
-                <img 
-                src="imgs/cortecabelo.jpg" 
-                alt="imagem corte cabelo"
-                >
-                 <div class="haircut-info">
-                    <strong>Corte normal</strong>
-                    <button>
-                      R$ 40,00
-                    </button>
-                 </div>
-            </div>
+        <div class="haircut" data-aos="fade-up" data-aos-delay="450">
+          <img src="imgs/cabeloBarba.jpg " alt="imagem corte normal" />
+          <div class="haircut-info">
+            <strong>Corte e barba</strong>
+            <button>
+              <p>R$ 70,00</p>
+            </button>
+          </div>
+        </div>
 
-            <div class="haircut" data-aos="fade-up" data-aos-delay="250">
-                <img 
-                src="imgs/barba.jpg" 
-                alt="imagem corte barba"
-                >
-                 <div class="haircut-info">
-                    <strong>Barba completa</strong>
-                    <button>
-                      R$ 35,00
-                    </button>
-                 </div>
-            </div>
-
-            <div class="haircut" data-aos="fade-up" data-aos-delay="450">
-                <img src="imgs/cabeloBarba.jpg "alt="imagem corte normal">
-                 <div class="haircut-info">
-                    <strong>Corte e barba</strong>
-                    <button>
-                      R$ 70,00
-                    </button>
-                 </div>
-            </div>
-
-            <div class="haircut div" data-aos="fade-up" data-aos-delay="650">
-                <img src="imgs/aasss.png"alt="imagem sobrancelha">
-                 <div class="haircut-info">
-                    <strong>Sobrancelha</strong>
-                    <button>
-                      R$ 15,00
-                    </button>
-                 </div>
-            </div>
-
-        </section>
+        <div
+          class="haircut"
+          class="haircut-img"
+          data-aos="fade-up"
+          data-aos-delay="650"
+        >
+          <img class src="imgs/sobrancelha.png" alt="sobrancelha" />
+          <div class="haircut-info">
+            <strong id="haircut-info-sobrancelha">Sobrancelha</strong>
+            <button>
+              <p>R$ 15,00</p>
+            </button>
+          </div>
+        </div>
+      </section>
     </section>
 
-    <!---footer-->
     <div class="services">
-        <h2 class="loc_h2">Estamos localizados em:</h2>
+      <h2 class="loc_h2">Estamos localizados em:</h2>
     </div>
 
-    <iframe
-    width="100%"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.6304794745643!2d-51.97784124103463!3d-22.837867649499753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94931dbd5aabe68f%3A0xfc4239d52fbed4e7!2sPrieto%20Barber%20Shop!5e0!3m2!1spt-PT!2sbr!4v1736194302132!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-
-
-<div class="services reviews">
-        <h2>Avaliações dos Clientes</h2>
-        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-        <div class="elfsight-app-8c360331-90cb-4885-bfa6-dd2621a16026" data-elfsight-app-lazy></div>
+    <div>
+      <iframe
+        width="100%"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d459.6304794745643!2d-51.97784124103463!3d-22.837867649499753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94931dbd5aabe68f%3A0xfc4239d52fbed4e7!2sPrieto%20Barber%20Shop!5e0!3m2!1spt-PT!2sbr!4v1736194302132!5m2!1spt-PT!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
     </div>
+
+    <div class="services reviews">
+      <h2>Avaliações dos Clientes</h2>
+      <script
+        src="https://static.elfsight.com/platform/platform.js"
+        async
+      ></script>
+      <div
+        class="elfsight-app-8c360331-90cb-4885-bfa6-dd2621a16026"
+        data-elfsight-app-lazy
+      ></div>
+    </div>
+
+    <!---------------------FOOTER (icones de contato + logo + texto)--------------------->
 
     <footer class="footer">
-        <div class="footer-icons">
-            <a href="https://www.instagram.com/luigiprietop/" target="_blank">
-                <i class="fa-brands fa-instagram fa-2x"></i>
-            </a>  
-            <a href="https://www.facebook.com/luigi.prietopaludo/" target="_blank">
-                <i class="fa-brands fa-facebook fa-2x"></i>
-            </a>
-            <a href="https://www.tiktok.com/@luigiprietop" target="_blank">
-                <i class="fa-brands fa-tiktok fa-2x"></i>
-            </a>  
-        </div>
+      <div class="footer-icons">
+        <a href="https://www.instagram.com/luigiprietop/" target="_blank">
+          <i class="fa-brands fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/luigi.prietopaludo/" target="_blank">
+          <i class="fa-brands fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.tiktok.com/@luigiprietop" target="_blank">
+          <i class="fa-brands fa-tiktok fa-2x"></i>
+        </a>
+      </div>
 
-        <div class="footer-img">
-            <img  
-            src="imgs/logo.webp" 
-            alt="logo barbearia"
-            />
-        </div>
+      <div class="footer-img">
+        <img src="imgs/logo.webp" alt="logo barbearia" />
+      </div>
 
-        <div class="footer-text">
-            <p>
-                Copyright 2025 | Todos os direitos reservados.
-            </p>
-            <p>
-                Criado por <a href="https://www.linkedin.com/in/vitor-hugo-assis" target="_blank" class="autor-link">Vitor Assis</a>
-            </p>
-        </div>
+      <div class="footer-text">
+        <p>Copyright 2025 | Todos os direitos reservados.</p>
+        <p>
+          Criado por
+          <a
+            href="https://www.linkedin.com/in/vitor-hugo-assis"
+            target="_blank"
+            class="autor-link"
+            >Vitor Assis</a
+          >
+        </p>
+      </div>
     </footer>
 
-    <!---botao whatsapp-->
+    <!---------------------BOTAO WHATSAPP--------------------->
 
-    <a  
-    href="https://api.whatsapp.com/message/APZMTMB5PJP4J1?autoload=1&app_absent=0"
-    class="btn-whatsapp"
-    target="_blank"
-    data-aos="zoom-in-up" data-aos-delay="400"
+    <a
+      href="https://api.whatsapp.com/message/APZMTMB5PJP4J1?autoload=1&app_absent=0"
+      class="btn-whatsapp"
+      target="_blank"
+      data-aos="zoom-in-up"
+      data-aos-delay="400"
     >
-      <img 
-      class="botao-whatsapp"
-      src="imgs/whatssapp.png" 
-      alt="botao whatsapp">
+      <img
+        class="botao-whatsapp"
+        src="imgs/whatssapp.png"
+        alt="botao whatsapp"
+      />
       <span class="tooltip-text">Agende seu horário</span>
     </a>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

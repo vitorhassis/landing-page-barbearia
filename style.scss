@@ -1,37 +1,38 @@
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: 0; //remove qualquer outline visual do elemento
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0; //remove qualquer outline visual do elemento
+}
 
- @import "partes/colors";
- @import "partes/header";
- @import "partes/layout";
+//importando as partes scss
+@import "partes/colors";
+@import "partes/header";
+@import "partes/layout";
 
- body{
-  font-family: 'Sora', sans-serif;
+body {
+  font-family: "Sora", sans-serif;
   width: 100%;
   height: 100vh;
   position: relative;
   background-color: $primary-dark;
- }
+}
 
- button{
-  font-family: 'Sora', sans-serif;
+button {
+  font-family: "Sora", sans-serif;
   cursor: pointer;
- }
+}
 
- //imagens
-svg{
+//imagens
+svg {
   width: 150%;
 }
 
-img{
+img {
   width: 100%;
 }
 
-a{
+a {
   cursor: pointer;
   text-decoration: none;
 }

@@ -1,413 +1,401 @@
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 8px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 8px;
 }
 
+//---------------------BACKGROUND HOME---------------------//
+
 .bg-home {
-    position: relative;
+  position: relative;
 }
 
 .bg-home:before {
-    content: '';
-    display: block;
-    position: absolute;
-    background-image: linear-gradient(to bottom, #06121eb0, #06121e), url("../imgs/banner.jpg");
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; //camada abaixo da imagem, ou seja, atras dos elementos
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    opacity: 0.9;
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(to bottom, #06121eb0, #06121e),
+    url("../imgs/banner.jpg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; //camada abaixo da imagem, ou seja, atras dos elementos
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
 }
 
-@media screen and (max-width:768px) {
-
-    .header-content.container {
-        padding-top: 2em;
-    }
-
-    #header-img {
-        margin-right: 10em;
-        margin-top: 2em;
-    }
-
-    #hero-container-h1 {
-        font-size: 35px;
-        padding: 2em;
-    }
-}
-
-//---hero---
+//---------------------HERO---------------------//
 
 .hero {
-    color: $white-normal;
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center; //vertical
-    justify-content: center; //horizontalP
-    padding: 14px;
+  color: $white-normal;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; //vertical
+  justify-content: center; //horizontalP
+  padding: 14px;
 
-    h1 {
-        text-align: center;
-        line-height: 150%;
-        max-width: 940px;
-        font-size: 46px;
-    }
+  h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 46px;
+  }
 
-    p {
-        text-align: center;
-        margin: 14px 0; // cima-baixo(14px) esq-direita (0)
-    }
+  p {
+    text-align: center;
+    margin: 14px 0; // cima-baixo(14px) esq-direita (0)
+  }
 }
-
-
 
 //botao agendar horario
 .button-contact {
-    padding: 14px 28px; //cima-baixo(14px) esq-direita(28px)
-    color:$white-normal;
-    background-color: $red-normal;
-    border: 0;
-    font-size: 18px;
-    font-weight: 600;
-    margin: 14px 0;
+  padding: 14px 28px; //cima-baixo(14px) esq-direita(28px)
+  color: $white-normal;
+  background-color: $red-normal;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
 }
 
 .button-contact:hover {
-    animation: scaleButton 0.8s alternate infinite;
+  animation: scaleButton 0.8s alternate infinite;
 }
 
 //criamos uma animação, assim como no header. Mas aqui, ele apenas aumenta de tamanho.
 @keyframes scaleButton {
-    from {
-        transform: scale(1);
-    }
+  from {
+    transform: scale(1);
+  }
 
-    to {
-        transform: scale(1.07);
-    }
+  to {
+    transform: scale(1.07);
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .hero h1 {
-        padding: 1em;
-    }
+  .hero h1 {
+    padding: 1em;
+  }
 
-    #container-img {
-        width: 450px;
-    }
+  #container-img {
+    width: 450px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .hero {
-        min-height: 60vh; //tenha sempre uma presença mínima garantida na tela, mas que esteja livre para expandir se o conteúdo exigir
+  .hero {
+    min-height: 60vh; //tenha sempre uma presença mínima garantida na tela, mas que esteja livre para expandir se o conteúdo exigir
 
-        h1 {
-            font-size: 34px;
-            padding: 0 14px;
-            width: 100%;
-        }
-
-        p {
-            font-size: 14px;
-        }
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .hero h1 {
-        font-size: 24px;
-    }
-}
-
-//---
-
-//---about---
-
-.about {
-    background-color: $primary-normal;
-    overflow: hidden;
-    color: $white-normal;
-}
-
-.about-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px; //gap entre o texto sobre e as imgs
-    padding: 34px 14px 64px 14px;
-
-    img {
-        width: 600px;
-    }
-}
-
-.about-container div {
-    flex:1;
-}
-
-.about-description {
-    h2 {
-        font-size: 38px;
-        margin-bottom: 24px;
+    h1 {
+      font-size: 34px;
+      padding: 0 14px;
+      width: 100%;
     }
 
     p {
-        margin-bottom: 14px;
-        line-height: 150%; //define o espaço total disponível para cada linha de texto
+      font-size: 14px;
     }
-}  
+  }
+
+  #hero-container-h1 {
+    font-size: 35px;
+    padding: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+}
+
+//---------------------ABOUT---------------------//
+
+.about {
+  background-color: $primary-normal;
+  overflow: hidden;
+  color: $white-normal;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px; //gap entre o texto sobre e as imgs
+  padding: 34px 14px 64px 14px;
+
+  img {
+    width: 600px;
+  }
+}
+
+.about-container div {
+  flex: 1;
+}
+
+.about-description {
+  h2 {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    margin-bottom: 14px;
+    line-height: 150%; //define o espaço total disponível para cada linha de texto
+  }
+}
 
 @media screen and (max-width: 1200px) {
-    #container-img {
-        width: 470px;
-    }
+  #container-img {
+    width: 470px;
+  }
 
-    .about-container p{
-        padding-right: 3em;
-    }
+  .about-container p {
+    padding-right: 3em;
+  }
 
-    .about-container h2 {
-        padding-right: 1em;
-    }
-
+  .about-container h2 {
+    padding-right: 1em;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    #container-img {
-        width: 400px;
-    }
+  #container-img {
+    width: 400px;
+  }
 
-    .about-container h2 {
-        font-size: 36px;
-    }
+  .about-container h2 {
+    font-size: 36px;
+  }
 
-    .about-container p {
-        font-size: 15px;
-        margin-right: 1em;
-    }
+  .about-container p {
+    font-size: 15px;
+    margin-right: 1em;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .about-container {
-        flex-direction: column; //ficar em coluna em telas menores
-    }
+  .about-container {
+    flex-direction: column; //ficar em coluna em telas menores
+  }
 
-    #container-img {
-        width: 500px;
-    }
+  #container-img {
+    width: 500px;
+  }
 
-    .about-container h2 {
-        font-size: 28px;
-        text-align: center;
-    }
+  .about-container h2 {
+    font-size: 28px;
+    text-align: center;
+  }
 
-   .about-description p {
+  .about-description p {
     font-size: 16px;
     padding: 0;
     margin-left: 15px;
     text-align: center;
     justify-content: center;
     align-items: center;
-   }
-
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .about-description p {
-        padding: 0;
-        margin-left: 2em;
-    }
+  .about-description p {
+    padding: 0;
+    margin-left: 2em;
+  }
 
-    .about-description h2 {
-        padding: 0;
-        margin-left: 0.5em;
-    }
-
+  .about-description h2 {
+    padding: 0;
+    margin-left: 0.5em;
+  }
 }
 
-//---
-
-//---services---
+//---------------------SERVICES---------------------//
 
 .services {
-    background-color: $white-normal;
-    color: $black-normal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
-    padding: 54px 14px;
+  background-color: $white-normal;
+  color: $black-normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  padding: 54px 14px;
 }
 
 .services-content h2 {
-    text-transform: uppercase; //letra maiúscula
-    text-align: center;
-    margin-bottom: 14px;
+  text-transform: uppercase; //letra maiúscula
+  text-align: center;
+  margin-bottom: 14px;
 }
 
 .services-content p {
-    line-height: 150%;
-    text-align: center;
-    margin-bottom: 3em;
-    max-width: 780px; //pra nao ficar linhas muito grandes. Vai se adaptando
+  line-height: 150%;
+  text-align: center;
+  margin-bottom: 3em;
+  max-width: 780px; //pra nao ficar linhas muito grandes. Vai se adaptando
 }
 
 .haircuts {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    padding: 0 44px 34px 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
 }
 
 .haircut {
-    flex: 1; //cada div, tentar ocupar o mesmo espaço na tela
-    display: flex;
-    flex-direction: column; //faz com que a div haircut-info fique a baixo da img, uma vez que pertencem a mesma div
-    background-color: $white-normal;
-    border-radius: 8px;
-    box-shadow: 0px -1px 17px -4px rgba(0,0,0, 0.45);
-    
-    overflow: hidden;
+  flex: 1; //cada div, tentar ocupar o mesmo espaço na tela
+  display: flex;
+  flex-direction: column; //faz com que a div haircut-info fique a baixo da img, uma vez que pertencem a mesma div
+  background-color: $white-normal;
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
 
-    img {
-        width: 100%;
-        max-width: 354px; //para que a seção nao passe de 354px, independente do tamanho
-        transition: transform 0.25s;
-    }
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    max-width: 354px; //para que a seção nao passe de 354px, independente do tamanho
+    transition: transform 0.25s;
+  }
 }
 
 .haircut img:hover {
-    transform: scale(1.1);
-    z-index: 1;
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 .haircut-info {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 14px;
-    background-color: $white-normal;    
-    z-index: 99;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: $white-normal;
+  z-index: 99;
 }
 
 .haircut-info button {
-    color: $white-normal;
-    background-color: $red-normal;
-    border: 0;
-    padding: 4px 8px;
-    border-radius: 4px;
-    cursor: default; //para não demonstrar ação ao passar o cursor por cima do botao
+  color: $white-normal;
+  background-color: $red-normal;
+  border: 0;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: default;
+}
+
+@media screen and (max-width: 992px) {
+  .haircut-info strong {
+    font-size: 13px;
+  }
+
+  #haircut-info-sobrancelha {
+    padding-right: 8px;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .haircuts {
-        flex-direction: column;
-        margin-bottom: -1em;
-    }
+  .haircuts {
+    flex-direction: column;
+    margin-bottom: -1em;
+  }
 
-    .haircut img {
-        max-width: 740px;
-    }
+  .haircut img {
+    max-width: 740px;
+  }
 }
 
-//---
-
-//---footer---
+//---------------------FOOTER---------------------//
 
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 54px 0;
-    gap: 24px;
-    color: $white-normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 54px 0;
+  gap: 24px;
+  color: $white-normal;
 }
 
 .footer-icons {
-    display: flex;
-    gap: 10px;
-    color: $white-normal;
+  display: flex;
+  gap: 10px;
+  color: $white-normal;
 }
 
 .footer-text {
-    font-size: 13px;
-    color: $gray;
-    text-align: center;
-    justify-content: center;
+  font-size: 13px;
+  color: $gray;
+  text-align: center;
+  justify-content: center;
 }
 
 a.autor-link {
-    color: $gray;
-    text-decoration: none;
-    
-    &:hover {
-        text-decoration: underline;
-        cursor: pointer;
-        color: $white-dark;
-    }
+  color: $gray;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: $white-dark;
+  }
 }
 
 .loc_h2 {
-    margin-top: -2em;
+  margin-top: -2em;
 }
 
 .reviews {
-   margin-top: -0.3em;
+  margin-top: -0.3em;
 }
 
-//---botao whatsapp---
+//---------------------BOTAO WHATSAPP---------------------//
 
 .btn-whatsapp {
-    position: fixed; //deixar o botao fixo na tela, na direita 
-    bottom: 14px;
-    right: 24px;
-    z-index: 99;
+  position: fixed; //deixar o botao fixo na tela, na direita
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
 
-    img {
-        max-width: 74px;
-        transition: transform 0.4s;
-    }
+  img {
+    max-width: 74px;
+    transition: transform 0.4s;
+  }
 
-    img:hover {
-        transform: scale(1.1);
-    }
+  img:hover {
+    transform: scale(1.1);
+  }
 }
 
 .btn-whatsapp .tooltip-text {
-    visibility: hidden;
-    position: absolute;
-    width: 120px;
-    padding: 4px;
-    border-radius: 8px;
-    text-align: center;
-    top: 8px;
-    left: -144px;
-    background-color: $black-normal;
-    color: $white-normal;
-    opacity: 0;
-    transition: opacity 0.4s;
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  padding: 4px;
+  border-radius: 8px;
+  text-align: center;
+  top: 8px;
+  left: -144px;
+  background-color: $black-normal;
+  color: $white-normal;
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 
 //tooltip começa escondido, depois de passar o cursor no botao whatsapp ele aparece
-.btn-whatsapp:hover .tooltip-text{
-    visibility: visible;
-    opacity: 1;
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
-    .btn-whatsapp {
-        img {
-            max-width: 64px;
-        }
-    }   
+  .btn-whatsapp {
+    img {
+      max-width: 64px;
+    }
+  }
 }
-
-

@@ -1,81 +1,89 @@
 header {
-    width: 100%;
+  width: 100%;
 }
 
 .header-logo {
-    margin-left: 9.5em;
+  margin-left: 9.5em;
 }
 
 .header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-
 i {
-    color: $white-normal;
+  color: $white-normal;
 }
 
 .header-icons a:hover {
-    i {
-        animation: translateY 0.8s infinite alternate;
-        color: $red-light;
-    }
+  i {
+    animation: translateY 0.8s infinite alternate;
+    color: $red-light;
+  }
 }
 
 //definindo uma animação personalizada
 @keyframes translateY {
-    from {
-        transform: translateY(0) scale(1);
-    }
+  from {
+    transform: translateY(0) scale(1);
+  }
 
-    to {
-        transform: translateY(-8px) scale(1.1);
-    }
+  to {
+    transform: translateY(-8px) scale(1.1);
+  }
 }
 
 //estilizando o botao
 .header-button {
-    border: 1px solid $white-normal;
-    padding: 8px 24px;
-    border-radius: 4px;
-    color: $white-normal;
-    background-color: transparent;
-    transition: background-color 0.3s; //0.3s para transitar até as definicoes do :hover (essas abaixo)
+  border: 1px solid $white-normal;
+  padding: 8px 24px;
+  border-radius: 4px;
+  color: $white-normal;
+  background-color: transparent;
+  transition: background-color 0.3s; //0.3s para transitar até as definicoes do :hover (essas abaixo)
 }
 
 .header-button:hover {
-    border: 1px solid $red-light;
-    background-color: $red-light;
+  border: 1px solid $red-light;
+  background-color: $red-light;
 }
 
 .header-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 768px) {
-    .header-content {
-        width: 100%;
-        flex-direction: column;
-        align-items: center; //vertical
-        justify-content: center; //horizontal
-    }
+  .header-content {
+    width: 100%;
+    flex-direction: column;
+    align-items: center; //vertical
+    justify-content: center; //horizontal
+  }
 
-    i {
-        margin-top: 16px;
-        font-size: 34px;
-    }
+  i {
+    margin-top: 16px;
+    font-size: 34px;
+  }
 
-    .header-button {
-        display: none;
-    }
+  .header-button {
+    display: none;
+  }
 
-    .header-logo img {
-        width: 130px;
-        height: 90px;
-    }
+  .header-logo img {
+    width: 130px;
+    height: 90px;
+  }
+
+  .header-content.container {
+    padding-top: 2em;
+  }
+
+  #header-img {
+    margin-right: 10em;
+    margin-top: 2em;
+  }
 }
