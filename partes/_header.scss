@@ -87,3 +87,10 @@ i {
     margin-top: 2em;
   }
 }
+
+@media screen and (max-width: 400px) {
+  #header-img {
+    width: 120px;
+    height: 90px;
+  }
+}

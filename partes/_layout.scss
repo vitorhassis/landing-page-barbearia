@@ -109,9 +109,10 @@
 }
 
 @media screen and (max-width: 480px) {
-  .hero h1 {
-    font-size: 24px;
+  #hero-container-h1 {
+    font-size: 23px;
   }
+
 }
 
 //---------------------ABOUT---------------------//
@@ -212,6 +213,22 @@
   .about-description h2 {
     padding: 0;
     margin-left: 0.5em;
+  }
+}
+
+@media screen and (max-width:400px) {
+  #container-img {
+    width: 350px;
+  }
+
+  .about {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-description p {
+    margin: 0;
   }
 }
 
@@ -351,6 +368,12 @@ a.autor-link {
 
 .reviews {
   margin-top: -0.3em;
+}
+
+@media screen and (max-width: 400px) {
+  .footer-img {
+    width: 140px;
+  }
 }
 
 //---------------------BOTAO WHATSAPP---------------------//
