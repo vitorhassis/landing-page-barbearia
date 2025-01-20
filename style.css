@@ -213,7 +213,9 @@ i {
   margin-bottom: 24px;
   text-align: center;
 }
-.about-description p {
+
+#about-description-p {
+  padding: 12px;
   margin-bottom: 14px;
   line-height: 150%;
 }
@@ -222,12 +224,14 @@ i {
   #container-img {
     width: 470px;
   }
-  .about-container p {
-    padding-right: 3em;
-  }
+}
+@media screen and (min-width: 1200px) {
   .about-container h2 {
     padding-right: 1em;
     margin-bottom: 20px;
+  }
+  .about-container p {
+    padding-right: 3em;
   }
 }
 @media screen and (max-width: 992px) {
@@ -239,7 +243,6 @@ i {
   }
   .about-container p {
     font-size: 15px;
-    margin-right: 1em;
   }
 }
 @media screen and (max-width: 768px) {
@@ -251,31 +254,20 @@ i {
   }
   .about-container h2 {
     font-size: 28px;
-    text-align: center;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
   }
   .about-description p {
     font-size: 16px;
     padding: 0;
-    margin-left: 15px;
+    margin-left: 0px 0px 0px 15px;
     text-align: center;
     justify-content: center;
     align-items: center;
   }
-  .about-description h2 {
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-  }
 }
 @media screen and (max-width: 600px) {
-  .about-description p {
-    padding: 0;
-    margin-left: 2em;
-  }
-  .about-description h2 {
-    padding: 0;
-    margin-left: 0.5em;
-  }
   #container-img {
     width: 380px;
   }
@@ -288,9 +280,6 @@ i {
     text-align: center;
     align-items: center;
     justify-content: center;
-  }
-  .about-description p {
-    margin: 0;
   }
 }
 .services {
@@ -324,7 +313,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 30px;
   padding: 0 44px 34px 44px;
 }
 
