@@ -1,9 +1,9 @@
-# 💈 Prieto Barbearia - Landing Page  
+# <h2 align="center">💈 Prieto Barbearia - Landing Page 💈</h2>
 
 
 ## 📌 Sobre o projeto  
 
-Este é um projeto de landing page desenvolvido para a **Prieto Barbearia**, oferecendo um design moderno, responsivo e funcional para melhorar a experiência dos clientes e facilitar o agendamento de serviços.  
+Este é um projeto de landing page desenvolvido para a **Prieto Barbearia**, oferecendo um design moderno, responsivo e funcional para melhorar a experiência dos clientes e facilitar o agendamento de serviços (Referência: https://www.youtube.com/watch?v=Fzc_dnqD-V0).  
 
 🔗 **Acesse o site:** [prietobarbearia.shop](https://prietobarbearia.shop/)  
 
@@ -29,9 +29,11 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
 ---
 
+## 📩 Contato  
 
-## 📂 Como executar o projeto?  
+📧 **Email:** [vitorassis997@gmail.com](mailto:seuemail@email.com)  
+👨‍💻 **GitHub:** [github.com/vitorhassis](https://github.com/seuusuario)  
 
-1️⃣ Clone este repositório:  
-```bash
-git clone https://github.com/seuusuario/prioto-barbearia.git
+---
+
+<p align="center">⚡ <em>Desenvolvido por Vitor Assis</em> ⚡</p>
