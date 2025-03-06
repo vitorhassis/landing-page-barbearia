@@ -1,6 +1,5 @@
 # 💈 Prieto Barbearia - Landing Page  
 
-![Prieto Barbearia](https://prietobarbearia.shop/assets/images/banner.jpg)  
 
 ## 📌 Sobre o projeto  
 
